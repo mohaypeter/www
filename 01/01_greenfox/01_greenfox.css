@@ -1,0 +1,119 @@
+/* Készítette: Mohay Péter */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600&family=Crimson+Text:ital@0;1&display=swap');
+
+.gomb{
+    display: inline-block;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #00ff02;    
+    border: 8px red solid;  
+    border-radius: 20px;  
+    text-align: center;    
+}
+
+#humancolor{
+    border-color: purple;
+    background-color: yellow;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+
+
+.gomb:hover{
+    background-color: white;    
+    border-color: black;
+    box-shadow: 5px 5px 8px blue;
+}
+
+main{
+    background-color: orange;
+    padding: 20px;
+}
+
+p.elso, h1{
+    background-color: red;
+}
+
+h2{
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.kekbox p{
+    background-color: #0D91A1;
+    border: 5px solid #7DCE94;
+    color: #015668;
+    width: 300px; /* 50% */
+    padding: 20px 100px 100px 20px;
+    /* font-family: 'Times New Roman', Times, serif;
+    font-family: 'Crimson Text', serif; */
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 2rem;
+}
+
+.egtaj{
+    width: 500px;
+    border: #4285f4 solid 8px;
+    text-align: center;    
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    font-family: cursive;
+}
+
+#eszak{
+    background-color: #E67676;
+}
+
+#kelet{
+    background-color: #F2F062;
+}
+
+#del{
+    background-color: #A9E6E6;
+}
+
+#nyugat{
+    background-color: #7692E4;
+}
+
+.red{
+    padding: 30px 0 30px 0;
+    margin: 0;
+    background-color: #E67676;
+    height: 70px;
+    font-size: 40px;
+}
+
+.blue{
+    padding: 30px 0 30px 0;
+    margin: 0;
+    background-color: #A9E6E6;
+    height: 70px;
+    font-size: 40px;
+}
+
+button{
+    border-radius: 20px;
+    background-color: #0f0;
+    height: 40px;
+}
+
+.keret{
+    border-radius: 5px;
+    border: #0f0 solid 2px;
+    height: 30px;
+    margin: 10px 0;
+}
+#nameInputField, #nameInputPassword {
+    display: block;
+    
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+
+main {
+    margin: auto;
+    width: 600px;
+    background-color: bisque;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.kicsi, h2, h3, ol {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration-line: none;
+    color: brown;
+}

@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: khaki; 
+}
+
+#tarto{
+    background-color: white;
+    color: teal;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+figure#keptarto{
+    width: 80%;
+    height: 100px;
+}
+
+
+img#kep{    
+    width: 200px;
+    overflow: hidden;
+}

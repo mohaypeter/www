@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>GreenFox bevezető</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mohay Péter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="01_greenfox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Gombok</h1>
+    <nav>
+        <div class="gomb">
+            <a href="#">Apple</a>
+        </div>
+
+        <div class="gomb">
+            <a href="#">Pear</a>
+        </div>
+
+        <div class="gomb">
+            <a href="#">Bird</a>
+        </div>
+
+        <div class="gomb">
+            <a href="#">Dog</a>
+        </div>
+
+        <div class="gomb" id="humancolor">
+            <a href="#">Human</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Hello World!</h1>
+        <h2>My second</h2>
+        <h3>A small step</h3>
+        <h4>Towards</h4>
+        <h5>My pen</h5>
+        <h6>Passion</h6>
+
+        <p class="elso">A két leggyakrabban használt CSS tulajdonság a margin és a padding. Ezek segítségével beállítható, hogy a formázott elem milyen távol legyen más elemektől. A margin (margó) egy láthatatlan eltartó távolság, míg a padding a dobozon belül a tartalom és a doboz széle közötti távolság, de így például a háttér szín rajta látszódni fog. Rengeteg más CSS tulajdonság van, aminek értéket lehet beállítani, de csak akkor lesz érvényes a szabály, ha az az érték megfelelő a tulajdonsághoz. Margónak például bármilyen számot (egy mértékegységgel, pl. px vagy %) be lehet állítani, de nem lehet orange értéket megadni neki.</p>
+
+        <div class="kekbox">
+            <p>Velox</p>        
+            <p>Zerda</p>        
+            <p>Lagopus</p>
+        </div>
+        
+        <div class="egtaj">
+            <p id="eszak">North</p>
+            <p id="kelet">East</p>  
+            <p id="del">South</p> 
+            <p id="nyugat">West</p>
+        </div>
+
+        <div class="egtaj">
+            <p class="red">North</p>
+            <p class="red">North</p>
+        </div>
+        
+        <div class="egtaj">
+            <p class="blue">South</p>
+            <p class="blue">South</p>
+        </div>
+
+        <ul>
+            <li>Első</li>
+            <li>Második</li>
+            <li>Harmadik egy következő színtű listával
+              <ol>
+                <li>belső lista elem</li>
+                <li>belső lista elem</li>
+              </ol>
+            </li>
+          </ul>
+
+        <form>
+            <label for="nameInputField">Név: </label>
+            <input type="text" id="nameInputField" class="keret">
+            <label for="nameInputPassword">Jelszó: </label>
+            <input type="password" id="nameInputPassword" class="keret">
+            <button>submit</button>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>form cím <img src="" alt="kép">
+                </legend>
+                <fieldset>
+                    <legend>Neve</legend>
+                    <label for="nameInput">Név: </label>
+                    <input type="text" id="nameInput" class="keret">
+                </fieldset>
+                <fieldset>
+                    <legend>Kedvenc színed?</legend>
+                    <input type="checkbox" id="szin1">
+                    <label for="szin1">Red </label><br/>
+                    <input type="checkbox" id="szin2">                    
+                    <label for="szin2">Green    </label><br/>
+                    <input type="checkbox" id="szin3">
+                    <label for="szin3">Blue    </label><br/>
+                    <input type="checkbox" id="szin4">                  
+                    <label for="szin4">Other    </label>
+                    <input type="text" id="szin5" class="keret"><br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Tetszik ez?</legend>
+                    <input type="radio" id="radiojel1" name="igen">
+                    <label for="radiojel1">Igen</label><br>
+                    <input type="radio" id="radiojel2" name="igen">
+                    <label for="radiojel2">Yes</label><br>
+                    <input type="radio" id="radiojel3" name="igen">
+                    <label for="radiojel3">Other</label> 
+
+                </fieldset>
+                <fieldset>
+                    <legend>Megjegyzés</legend>
+                    <textarea rows="4" cols="50" name="comment" form="usrform" class="keret">
+                    </textarea> <br/>
+                    <form id="usrform">
+                        <input type="submit">
+                    </form>
+                </fieldset>
+            </fieldset>
+        </form>
+
+    </main>
+
+</body>
+</html>
