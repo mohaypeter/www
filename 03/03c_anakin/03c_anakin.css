@@ -33,7 +33,8 @@
 }
 
 .Nav_list li{
-  list-decoration-style: none;
+  list-style-type: none;
+  /*list-decoration-style: none;*/
 }
 
 .Nav_list li a:link {
