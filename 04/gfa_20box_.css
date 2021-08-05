@@ -1,0 +1,34 @@
+.container{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+
+}
+
+.doboz_box{
+    padding: 10px;
+    list-style-type: none;
+    margin: 10px;
+    border: 1px solid rgb(38, 150, 194);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.doboz_box li{
+  width: 50px;
+  height: 50px;
+  background: rgb(38, 150, 194);
+  margin: 10px;
+}
+
+.doboz_box#lila{
+    background-color: rgb(209, 73, 20);
+}
+
+.doboz_box#lila li{
+    background: rgb(116, 14, 116);
+}

@@ -1,0 +1,271 @@
+.Nav_bar{
+  width: 100%;
+  height: 100px;
+  margin-left: 0;
+  background: #000;
+/*   display: block;
+  position: static; */
+  /*   background: black; */
+  top: 0;
+  left: 0px;
+  overflow: auto;
+    
+}
+
+.Nav_list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Nav_list li a {
+  display: block;
+  width: auto;
+  text-align: center;
+  padding: 0px;
+  background-color: #000000;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+
+.Nav_list li{
+  list-decoration-style: none;
+}
+
+.Nav_list li a:link {
+  background-color: #000000;
+  color: white;
+}
+
+.Nav_list li a:hover {
+  background-color: #000000;
+  color: darkorange;
+}
+
+.Nav_list li a:active {
+  background-color: #000000;
+  color: darkgreen;
+}
+
+/* .Nav_list li a:visited {
+  background-color: #000000;
+  color: darkgrey;
+/* /* }*/   /*visited 'a' elem megjegyzésben, nincs hozzárendelve a href célok*/
+
+/*  1. oldal bal és jobb elem*/
+.page_box_1{
+  width: 100%;
+  height: 580px;
+  padding: 0;
+  margin: 0;
+  border: 3px solid black;
+/*   background-color: #f5ff; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.main_left_1{
+  width: 34%;
+  height: 580px;
+   /*   position: static;
+  top: 0px;
+  left: 0px; */
+  margin-top: 0px;
+    
+}
+
+#left_screen{
+  width: 100%;
+  height: 580px;
+/*   display: block; */
+/*   position: static;
+  top: 0px;
+  left: 0px; */
+  margin-top: 0px;
+  margin-right: 10px;
+  background-color: #222;
+  background-image: url("anakin.jpeg");
+  background-blend-mode: difference, multiply;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+
+#screen_txt_1{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px; 
+  border: 0;
+  font-weight: 100;
+  position: absolute;
+  left: 110px;
+  top: 362px;
+}
+
+#screen_txt_2{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 96px; 
+  line-height: 1;
+  border: 0;
+  font-weight: 100;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+}
+
+.main_right_1{
+  width: 60%;
+  height: 500px;
+/*   position: absolute;
+  top: 40px;
+  left: 100px; */
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  padding-right: 60px;
+/*   background-color: #f5ff; */
+/*   padding: 20px 20px 20px 20px; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.list_1{
+  list-style-type: square;
+}
+
+/*  2. oldal bal és jobb elem*/
+.page_box_2{
+  width: 100%;
+  height: 1275px;
+  margin-top: 40px;
+  border: 3px solid black;
+/*   background-color: #f5ff; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.main_l_2{
+  width: 34%;
+  height: 100%;
+  margin-top: 0px;
+ }
+
+.main_l_2 blockquote{
+  text-align: left;
+  width: 100%;
+  height: 45%;
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #616161;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  padding-bottom: 20px;
+  font-family: 'Abril Fatface', cursive;
+   
+}
+
+#supersign {
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  font-size: 200px;
+  text-align: center;
+  position: relative;
+  top: -55px;
+  left: -5px;
+  }
+
+#idezet_szoveg{
+  padding: 50px 40px 0px 70px;
+  margin: -10px auto;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 75px;
+  line-height: 1.5;
+  height: 0px;
+  /*   text-align: center; */
+}
+
+ q { 
+  quotes: '\201c' '\201d' '\2018' '\2019';
+  }
+#supersign q::before {
+  content: open-quote;
+}
+#supersign q::after {
+  content: no-close-quote;
+  }
+
+.main_r_2{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+/*   border: 3px solid red;
+  background: grey; */
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 60px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.main_r_2 h2{
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.main_r_2 p3{
+  font-size: 48px;
+  text-transform: normal;
+  font-style: bold;
+  font-weight: 900;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+}
+
+span.felirat {
+/*   background-color: yellow; */
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+  text-transform: normal;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1;
+}
+
+blockquote#block2{
+  
+  text-align: left;
+  width: 100%;
+  height: 98%;
+  margin: 0px auto;
+  padding: 0px;
+  background-color: #616161;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  padding-bottom: 20px;
+  font-family: 'Abril Fatface', cursive;
+   
+}
+#block2 #idezet_szoveg{
+  padding: 50px 40px 0px 70px;
+  margin: -10px auto;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 75px;
+  line-height: 1.9;
+  height: 0px;
+}
+
