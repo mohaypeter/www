@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.write('<h2>Kisebb nagyobb</h2>');
+    let a = 7;
+    if (a < 5) {
+      document.write(a / 2)
+    } else {
+      document.write(a * 2)
+    }
+
+    document.write('<h2>Ciklus</h2>');
+    let bookCount = 30;
+
+    for (let i = 0; i < bookCount; i = i + 3) {
+      document.write(i + '<br/>')
+    }
+
+    document.write('<h2>Függvény</h2>');
+    let add = (a, b) => {
+      return a + b
+      // a "return" kulcsszó miatt a függvény "visszaadja"
+      // az összeadás eredményét
+    }
+    document.write(add(8, -3) + '<br/>')
+
+    document.write('<h2>Függvény számlálás</h2>');
+    let numberCount = (kezdo, vegzo, lepes) => {
+      for (let i = kezdo; i < vegzo; i = i + lepes)
+        document.write(i + ',')
+    }
+    numberCount(2, 20, 3);//hiányzott
+
+    document.write('<h2>Függvény szöveg</h2>');
+    let udvozloNeki = (nev) => {
+      return 'Hello ' + nev + ' !';
+    }
+    //udvozloNeki('Mark');
+    document.write(udvozloNeki('Mark'));
+
+    document.write('<h2>Tömb</h2>');
+    let printValues = (array) => {
+      for (let i = 0; i < array.length; i++) {
+        document.write(array[i] + ', ');
+      }
+    };
+    let alma = [15, 20, 30, 40];//hiányzott
+    printValues(alma);//hiányzott
+
+    document.write('<h2>Tömb másként</h2>');
+    let myNumbers = [10, 20, 30, 50, 12];
+
+    // itt kijelentjük, hogy a tömb minden elemén szeretnénk valamit végrehajtani
+    myNumbers.forEach((number) => {
+      // a függvényen belül adhatjuk meg a végrehajtandó műveleteket
+      document.write(number + ", ");
+    });
+
+    document.write('<h2>Tömb másként 2</h2>');
+    let printValues2 = (array) => {
+      array.forEach((number) => {
+        document.write(number+ ", ");
+      })
+    };
+    printValues2(myNumbers);
+  </script>
+</body>
+
+</html>

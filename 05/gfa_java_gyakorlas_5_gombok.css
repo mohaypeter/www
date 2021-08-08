@@ -1,0 +1,10 @@
+h1 {
+  color: rgb(9, 51, 114);
+  margin: 30px;
+}
+
+.main{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}

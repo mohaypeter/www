@@ -1,0 +1,10 @@
+p {
+    background: #0D91A1;
+    color: #015668;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    margin: 40px 80px 20px 80px;
+    border: 3px solid #7DCE94;
+    font-family: 'Roboto', sans-serif;
+  }

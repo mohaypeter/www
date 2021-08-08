@@ -1,0 +1,15 @@
+ul li{
+    font-size: 18px;
+}
+
+
+.item_strike{
+    text-decoration: line-through;
+}
+
+.marked_item{
+    text-shadow: 0 0 20px rgb(126, 5, 110);
+    font-weight: bold;
+    color: rgb(36, 15, 56);
+    
+}
