@@ -66,9 +66,6 @@ $('#arrow_box_left').click(() => {
   loadPhoto(currentPhoto);
 });
 
-let loadThumb = (thNumber) => {
-  $('#thphoto').attr('src', data[thNumber].photo);
- }
 
 
 data.forEach((titletext,index) => {
@@ -76,16 +73,13 @@ data.forEach((titletext,index) => {
  $('#thumb_box').append(`<div class="thumbnail" data-index="${index}"> 
   <img src="${(data[(index)].photo)}" class="kiskep"> 
   <p2>${(data[(index)].title)}</p2></div>`);
-  //$('p2').text(data[(index)].title);
+  
 
   console.log((data[(index)].title))
 
   return;
 
 
-
-  /*loadThumb(index);*/
-  /*$('#thphoto_${index}').attr('src', data[index].photo);*/
   
   /*$('.thumbnail').click((event) => {
     let indexClicked = $(event.target).attr('data-index');
