@@ -73,8 +73,8 @@ let loadThumb = (thNumber) => {
 
 data.forEach((titletext,index) => {
  
- $('#thumb_box').append(`<div class="thumbnail" data-index="${index}" 
-  <img src="${(data[(index)].photo)}"> 
+ $('#thumb_box').append(`<div class="thumbnail" data-index="${index}"> 
+  <img src="${(data[(index)].photo)}" class="kiskep"> 
   <p2>${(data[(index)].title)}</p2></div>`);
   //$('p2').text(data[(index)].title);
 
