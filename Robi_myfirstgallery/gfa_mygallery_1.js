@@ -74,16 +74,13 @@ data.forEach((titletext,index) => {
   <img src="${(data[(index)].photo)}" class="kiskep"> 
   <p2>${(data[(index)].title)}</p2></div>`);
   
-
-  console.log((data[(index)].title))
-
   return;
 
 
   
   /*$('.thumbnail').click((event) => {
     let indexClicked = $(event.target).attr('data-index');
-    $('#clicked').text(data[indexClicked]);
+    currentPhoto = indexClicked;
   });*/
 });
 
