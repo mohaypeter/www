@@ -1,0 +1,114 @@
+main.center {
+  display: flex;
+  justify-content: center;
+ 
+}
+.inner_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 450px; 
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-evenly;
+  box-shadow: 0 1px 10px 2px rgba(88, 88, 88, 0.65);
+  font-family: 'Georama', sans-serif;
+}
+
+.arrow {
+  width: 7%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow_box_left{
+  width: 40px;
+  height: 40px;
+}
+
+
+#arrow_box_right{
+  transform: rotate(0.5turn);
+}
+
+#left_arrow_box{
+  width: 40px;
+  height: 40px;   
+}
+
+#arrow_box_left.img {
+  width: 20px; 
+  padding: 5px,
+}
+
+#photo{
+  height: 450px;
+  display: fixed;   
+}
+
+.grey_box{
+  position: fixed;
+  top: 320px;
+  left: 125px;
+  width: 950px;
+  height: 130px;  
+  background-color: rgb(38, 38, 38, 0.5);
+}
+
+
+
+#photo-title{
+  padding-left: 0.5em;
+  color: rgba(245, 244, 244, 0.9);
+  line-height: 0.5em;
+  
+}
+
+#photo-description{
+  padding-left: 1.0em;
+  color: rgba(245, 244, 244, 0.7);
+  
+}
+#thumb_box{
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  bottom: -110px;
+  left: -100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  border: 5px solid blue;
+  /*background: white;*/
+ 
+}
+.thumbnail:hover p2 {
+  display: block;
+}
+
+p2 {
+  display: none;
+  position: relative;
+  text-align: center;
+  width:  110px;
+  height: fit-content;
+  font-size: 1em;
+  background: rgb(34, 34, 34);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  top: -60px;
+  left: -40px;
+}
