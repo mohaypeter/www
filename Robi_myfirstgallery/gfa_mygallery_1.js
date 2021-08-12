@@ -71,7 +71,7 @@ let loadThumb = (thNumber) => {
  }
 
 
-/*data.forEach((titletext,index) => {
+data.forEach((titletext,index) => {
  
  $('#thumb_box').append(`<div class="thumbnail" data-index="${index}" 
   <img src="${(data[(index)].photo)}"> 
@@ -91,7 +91,7 @@ let loadThumb = (thNumber) => {
     let indexClicked = $(event.target).attr('data-index');
     $('#clicked').text(data[indexClicked]);
   });*/
-//});
+});
 
 
 
