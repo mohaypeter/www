@@ -48,7 +48,7 @@ let loadPhoto = (photoNumber) => {
   $('#photo').attr('src', data[photoNumber].photo);
   $('#photo-title').text(data[photoNumber].title);
   $('#photo-description').text(data[photoNumber].description);    
-  $('div.thumbnail[data-index='+photoNumber+']').removeClass('marked');
+data.forEach((titletext,index) => {$('div.thumbnail[data-index='+index+']').removeClass('marked');});
   $('div.thumbnail[data-index='+photoNumber+']').addClass('marked');
 }
 
@@ -79,22 +79,19 @@ data.forEach((titletext,index) => {
   $('#thumb_box').append(`<div class="thumbnail" data-index="${index}"> 
    <img src="${(data[(index)].photo)}" class="smallpicture" data-index="${index}"> 
    <p2>${(data[(index)].title)}</p2></div>`);
+   $('div.thumbnail[data-index='+index+']').removeClass('marked');
      
-  /*$('.thumbnail';).click((event) => {
-    let indexClicked = $(event.target).attr('data-index');
-    loadPhoto(indexClicked);*/
 
-//$('div.thumbnail[data-index='+currentPhoto+']').addClass('marked');
-  $('.smallpicture').click((event) => {
+$('div.thumbnail[data-index='+currentPhoto+']').addClass('marked');
+$('.smallpicture').click((event) => {
       let indexClicked = $(event.target).attr('data-index');
       currentPhoto = indexClicked;
-      loadPhoto(currentPhoto);
-
+      loadPhoto(currentPhoto);      
   });
 
 
    return;
-  
+
 });
 
 
