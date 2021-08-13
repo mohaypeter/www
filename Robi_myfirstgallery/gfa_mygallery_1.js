@@ -40,11 +40,18 @@ let data = [{
   
 
 let currentPhoto = 0;
+
+
+//let thumbnumber = `"${currentPhoto}"`;
 let loadPhoto = (photoNumber) => {
+  //$('div.thumbnail[data-index='+photoNumber+']').toggleClass('marked');
   $('#photo').attr('src', data[photoNumber].photo);
   $('#photo-title').text(data[photoNumber].title);
-  $('#photo-description').text(data[photoNumber].description);
+  $('#photo-description').text(data[photoNumber].description);    
+  $('div.thumbnail[data-index='+photoNumber+']').removeClass('marked');
+  $('div.thumbnail[data-index='+photoNumber+']').addClass('marked');
 }
+
 
 loadPhoto(currentPhoto);
 
@@ -67,22 +74,30 @@ $('#arrow_box_left').click(() => {
 });
 
 
-
 data.forEach((titletext,index) => {
  
- $('#thumb_box').append(`<div class="thumbnail" data-index="${index}"> 
-  <img src="${(data[(index)].photo)}" class="kiskep"> 
-  <p2>${(data[(index)].title)}</p2></div>`);
-  
-  return;
-
-
-  
-  /*$('.thumbnail').click((event) => {
+  $('#thumb_box').append(`<div class="thumbnail" data-index="${index}"> 
+   <img src="${(data[(index)].photo)}" class="smallpicture" data-index="${index}"> 
+   <p2>${(data[(index)].title)}</p2></div>`);
+     
+  /*$('.thumbnail';).click((event) => {
     let indexClicked = $(event.target).attr('data-index');
-    currentPhoto = indexClicked;
-  });*/
+    loadPhoto(indexClicked);*/
+
+//$('div.thumbnail[data-index='+currentPhoto+']').addClass('marked');
+  $('.smallpicture').click((event) => {
+      let indexClicked = $(event.target).attr('data-index');
+      currentPhoto = indexClicked;
+      loadPhoto(currentPhoto);
+
+  });
+
+
+   return;
+  
 });
+
+
 
 
 
